@@ -1,15 +1,19 @@
-/* Regla para el body */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #0b1424;
-  color: #e2e8f0;
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #e8f0fa;
+  background: #07111f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
 }
-/* Estilo para el navbar*/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #07111f; }
+button, a { font: inherit; }
+a:focus-visible { outline: 2px solid #67e8f9; outline-offset: 4px; }
+::selection { color: #061321; background: #67e8f9; }
