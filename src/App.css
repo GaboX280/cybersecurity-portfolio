@@ -1,0 +1,151 @@
+/* REGLAS GENERALES */
+* {
+  box-sizing: border-box;
+}
+/* Reglas para el navbar en general */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+/* Regla para los UL*/
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+/* Regla para los enlaces */
+.navbar a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: bold;
+  transition: color 0.2s ease , transform 0.2s ease;
+}
+/* Regla apra el hover del link*/
+.navbar a:hover {
+  color: #67e8f9;
+  transform: translateY(-2px);
+}
+/* Regla para el Logo del Navbar*/
+.navbar-logo {
+  color:#67e8f9;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+/* Regla para el Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+  padding: 0 1rem;
+  width: 80%;
+  margin-inline: auto;
+  max-width: 1100px;
+}
+/* Regla para la descripcion del Hero */
+.hero-description {
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+/* Regla para el titulo del Hero*/
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #67e8f9;
+}
+/* Regla para el subtítulo del Hero */
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+/* Regla para los enlaces en el Hero */
+.hero a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #67e8f9;
+  color: #0b1424;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+/* Regla general para los botones */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+/* Reglas para el estilo secundario del enlace */
+.hero .btn-secondary {
+  background-color: transparent;
+  color: #67e8f9;
+  border: 2px solid #67e8f9;
+  margin-left: 1rem;
+}
+/* Reglas para el hover del enlace secundario */
+.hero .btn-secondary:hover {
+  background-color: rgba(103, 232, 249, 0.1);
+}
+/* Regla para el hover de los enlaces en el Hero */
+.hero a:hover {
+  background-color: #38bdf8;
+  transform: translateY(-2px);
+}
+/* Reglas para la sección About */
+.about {
+  padding: 2rem;
+  text-align: center;
+  background-color:#111c2e;
+  color: #e2e8f0;
+}
+/* Reglas para el titulo de la sección About */
+.about h2 {
+  color: #67e8f9;
+  margin-bottom: 1rem;
+}
+/* Reglas para el párrafo de la sección About */
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+/* Seccion para hacer responsive la interfaz */
+@media (max-width: 768px) {
+  /* Propiedades nuevas de la navbar */
+  .navbar {
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  /* Cambios para el menu en móvil */
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  /* Adaptacion para el hero */
+  .hero {
+    width: 90%;
+  }
+  /* Adaptacion para el titulo del hero*/
+  .hero h1 {
+    font-size: 2.2rem;
+    overflow-wrap: anywhere;
+  }
+  /* Estilos para los botones en móvil */
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
